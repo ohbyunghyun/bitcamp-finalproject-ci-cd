@@ -105,13 +105,12 @@ task copyWebApp(type: Copy) {
     into "$projectDir/src/main/resources/static"
 } 
 
-
 task buildReact(type: Exec) {
   dependsOn "installReact"
   workingDir "$webappDir"
   inputs.dir "$webappDir"
   group = BasePlugin.BUILD_GROUP
-  commandLine "npm", "run-script", "build"
+  commandLine 'npm', 'run-script', 'build'
 }
 
 task installReact(type: Exec) {
