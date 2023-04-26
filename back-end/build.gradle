@@ -15,6 +15,12 @@ node {
   download = true
 }
 
+task appNpmInstall(type: NpmTask) {
+  description = "Installs dependencies from package.json"
+  workingDir = file("${projectDir}/src/main/resources/static");
+  args = ["install"]
+}
+
 group = 'bitcamp'
 version = '0.0.1-SNAPSHOT'
 
