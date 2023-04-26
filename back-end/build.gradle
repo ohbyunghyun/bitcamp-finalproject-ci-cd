@@ -111,7 +111,7 @@ task buildReact(type: Exec) {
   workingDir "$webappDir"
   inputs.dir "$webappDir"
   group = BasePlugin.BUILD_GROUP
-  commandLine "npm", "run-scripts", "build"
+  commandLine "npm run-scripts build"
 }
 
 task installReact(type: Exec) {
