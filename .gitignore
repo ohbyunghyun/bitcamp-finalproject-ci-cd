@@ -40,7 +40,7 @@ out/
 node_modules/
 
 ### properties ###
-*.properties
+### *.properties
 
 ### generated image folder ###
 
